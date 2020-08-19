@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="gameControl.js"></script>
+    <title>
+        TIC TAC TOE
+    </title>
+    <style>
+    body{
+    font-family:vardana;
+    font-weigth:900;
+    }
+#HarshOne{
+text-align:center;
+}
+#replay{
+background-color:Black;
+color:white;
+font-size:20px;
+font-weight:900;
+border:1px solid black;
+border-radius:10px;
+}
+#computerStats{
+font-size:20px;
+color:black;
+}
+#playerStats{
+font-size:20px;
+color:black;
+position:absolute;
+margin-top:80px;
+}
+.gameBox{
+background-color:#2962ff;
+border:1px solid black;
+padding:20px;
+margin:20px;
+border-radius:10px;
+}
+#gameInterface{
+text-align:center;
+}
+#Instructions{
+float:center;
+font-size:20px;
+font-style:bold;
+}
+</style>
+
+</head>
+<body scroll="no" style="overflow: hidden" onload="initialize()">
+
+<div id="computerStats">Player (O) </div>
+<br/><br/><br/>
+<div id="gameInterface">
+    <button type="button" class="gameBox" id="but1" onclick="ButOne()"></button>
+
+    <button type="button" class="gameBox" id="but2" onclick="ButTwo()"></button>
+
+    <button type="button" class="gameBox" id="but3" onclick="ButThree()"></button>
+
+    <br/><br/>
+
+    <button type="button" class="gameBox" id="but4" onclick="ButFour()"></button>
+
+    <button type="button" class="gameBox" id="but5" onclick="ButFive()"></button>
+
+    <button type="button" class="gameBox" id="but6" onclick="ButSix()"></button>
+
+    <br/><br/>
+
+    <button type="button" class="gameBox" id="but7" onclick="ButSeven()"></button>
+
+    <button type="button" class="gameBox" id="but8" onclick="ButEight()"></button>
+
+    <button type="button" class="gameBox" id="but9" onclick="ButNine()"></button>
+
+    <br/><br/>
+</div>
+<div id="HarshOne">
+    <span id="Instructions">Player Chance (X)</span><br/><span id="InstructionsOne"></span><span id ="HarshTimer" ></span><br/><br/>
+    <button type="button" id="replay" onclick="timer()">Re-Play</button>
+</div>
+
+<div id="playerStats">Player (X)</div>
+
+</body>
+</html>
